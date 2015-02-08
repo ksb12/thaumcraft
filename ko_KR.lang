@@ -16,7 +16,7 @@ potion.warpward=뒤틀림 해소
 potion.deathgaze=죽음의 시선
 potion.blurred=안개
 potion.sunscorned=햇빛 알러지
-potion.thaumarhia=플럭스 구토
+potion.thaumarhia=플럭스 분비
 #
 #Warp
 warp.text.1=이상하게 기운이 빠진 듯 지칩니다.
@@ -29,13 +29,13 @@ warp.text.5=갑자기 불빛이 피부를 태울 정도로 너무나 강렬하�
 warp.text.6=갑자기 깊은 안개가 드리웠습니다. 무언가 심연 속에서 움직이는 것만 같습니다.
 warp.text.7=사방에 그것들이 있어... 도망, 도망가야돼!
 warp.text.8=머리가 너무 아파... 이 두통을 없앨순 없을까?
-warp.text.9=당신은 일을 하는 것에 피로감을 느꼈습니다.
+warp.text.9=당신은 일을 그만두는 것이 꺼려집니다.
 warp.text.10=당신은 방금 무언가를 느꼈습니다.
 warp.text.11=방금 그 소리는 뭐였지? 네 뒤에 무언가가 있어.
 warp.text.12=누군가가 날 따라오고 있어.
-warp.text.13=누군가가 당신을 보고 있습니다. 아마도 이제 멈출 시간인 것 같습니다.
+warp.text.13=누군가가 당신을 보고 있습니다. 점점 몸에서 힘이 빠집니다.
 warp.text.14=당신은 방금 뭔가가 명확해짐을 느꼈습니다.
-warp.text.15=뱃속에 뭔가 가득 찬 것 같이 배가 아파옵니다.
+warp.text.15=당신의 뱃속이 갑자기 꼴록꼴록거리기 시작합니다.
 #
 # Entities
 entity.Thaumcraft.ThaumSlime.name=사우믹 슬라임
@@ -159,6 +159,7 @@ tile.blockWoodenDevice.4.name=아케인 채굴기 받침대
 tile.blockWoodenDevice.5.name=아케인 채굴기
 tile.blockWoodenDevice.6.name=그레이트우드 판자
 tile.blockWoodenDevice.7.name=실버우드 판자
+tile.blockWoodenDevice.8.name=배너
 tile.blockJar.0.name=단지
 tile.blockJar.1.name=단지 안의 뇌
 tile.blockJar.2.name=단지 안의 노드
@@ -168,8 +169,8 @@ tile.blockTable.1.name=테이블
 tile.blockTable.research.name=연구 테이블
 tile.blockTable.14.name=분석 테이블
 tile.blockTable.15.name=아케인 작업대
-tile.researchtable.noink=잉크가 부족합니다.
-tile.researchtable.nomove=활성화된 룬은 이동시킬 수 없습니다.
+tile.researchtable.noink.0=잉크가 부족합니다.
+tile.researchtable.noink.1=필기도구를 리필하세요.
 tile.blockChestHungry.name=배고픈 상자
 tile.blockArcaneDoor.name=아케인 도어
 tile.blockLifter.name=아케인 공중부양기
@@ -207,6 +208,9 @@ tile.blockStoneDevice.8.name=복합 충전 포커스
 tile.blockStoneDevice.9.name=노드 스태빌라이저
 tile.blockStoneDevice.10.name=Adv. 노드 스태빌라이저
 tile.blockStoneDevice.11.name=노드 변환기
+tile.blockStoneDevice.12.name=아케인 스파
+text.spa.mix.true=소금과 물을 혼합해 방출합니다.
+text.spa.mix.false=탱크 안의 액체를 방출합니다.
 tile.blockTube.0.name=에센시아 튜브
 tile.blockTube.1.name=에센시아 밸브
 tile.blockTube.2.name=연금술 원심분리기
@@ -214,7 +218,7 @@ tile.blockTube.3.name=에센시아 필터링 튜브
 tile.blockTube.4.name=에센시아 버퍼
 tile.blockTube.5.name=감쇄 에센시아 튜브
 tile.blockTube.6.name=단방향 에센시아 튜브
-tile.blockTube.6.name=에센시아 결정화 장치
+tile.blockTube.7.name=에센시아 결정화 장치
 container.alchemyfurnace=연성 화로
 tile.blockArcaneFurnace.name=지옥불 화로
 tile.blockEldritch.0.name=이계의 제단
@@ -372,9 +376,8 @@ item.ItemSwordThaumium.name=사우뮴 검
 item.ItemPickThaumium.name=사우뮴 곡괭이
 item.ItemHoeThaumium.name=사우뮴 괭이
 item.researchnotes.name=연구일지
-item.researchnotes.unknown=알 수 없는 지식
-item.researchnotes.failed.1=실패했습니다. 지식의 조각으로 다시
-item.researchnotes.failed.2=반환하려면 조합창에 올려놓으십시오
+item.researchnotes.unknown.1=알 수 없는 지식
+item.researchnotes.unknown.2=<오른쪽 클릭으로 확인>
 item.discovery.name=발견
 item.ItemWispEssence.name=에테리얼 에센스
 item.ItemCrystalEssence.name=결정화된 에센스
@@ -437,6 +440,7 @@ item.ItemRingRunic.3.name=결계 반지: 재활성화
 item.ItemGirdleRunic.0.name=결계 허리띠
 item.ItemGirdleRunic.1.name=결계 허리띠: 충격파
 item.runic.charge=결계량
+item.warping=뒤틀림
 item.ItemBaubleBlanks.0.name=아뮬렛
 item.ItemBaubleBlanks.1.name=반지
 item.ItemBaubleBlanks.2.name=허리띠
@@ -448,13 +452,18 @@ item.ItemAmuletVis.1.name=비스 저장 아뮬렛
 item.ItemGirdleHover.name=사우모스태틱 허리띠
 item.ItemBathSalts.name=정화용 입욕 소금
 item.ItemBucketDeath.name=액체 죽음 양동이
+item.ItemBucketPure.name=정화의 액체 양동이
 item.ItemHelmetFortress.name=사우뮴 전투 헬멧
 item.ItemChestplateFortress.name=사우뮴 전투 흉갑
 item.ItemLeggingsFortress.name=사우뮴 전투 레깅스
 item.HelmetFortress.mask.0=악마의 미소
 item.HelmetFortress.mask.1=분노한 영혼
 item.HelmetFortress.mask.2=새어나오는 광기
-item.ItemEldritchObject.name=이계의 눈빛
+item.ItemEldritchObject.0.name=이계의 눈
+item.ItemEldritchObject.1.name=크림슨 주술서
+item.ItemEldritchObject.text.1=당신을 쳐다보는 듯 합니다.
+item.ItemEldritchObject.text.2=이해할 수 없는 기호들로 가득합니다.
+item.ItemEldritchObject.text.3=클릭하여 지식을 습득 [currently disabled] 
 item.ItemHelmetVoid.name=공허의 헬멧
 item.ItemChestplateVoid.name=공허의 갑옷
 item.ItemLeggingsVoid.name=공허의 레깅스
@@ -496,10 +505,10 @@ golemblurb.8.text=이 아이템을 블럭 위에 사용할까요, 아니면 특�
 golemblurb.10.text=방향을 지정해 주시면 정리를 해 두겠습니다.
 golemthreat.0.text=뭐, 골렘의 반란? 그게 뭐야? 난 아무것도 몰라!
 golemthreat.1.text=흠, 내가 뭔가를 옮기길 원하는 거야?
-golemthreat.2.text=크하 하 하 하 하 하 하 하 하 하 하 하 하 하 하 하 하 하 하!
+golemthreat.2.text=크하→하→하→하→하→하→하→하→하→하→하↘
 golemthreat.3.text=걱정하지 말라고, 아무짓도 안하지 않을테니까...
 golemthreat.4.text=낮잠이나 좀 자는 건 어때? 정말 졸려보이는군. 아주 많이 말이야.
-golemthreat.5.text=ㅂㅈㅁㄴㅇㅀㅋㅌㅊㅍㅈㄷㄹㅋㅇㄻㄷㄹ!
+golemthreat.5.text=궯둛쉙룂!
 golemthreat.6.text=너같은 녀석을 존중해줄 생각은 전혀 없다고!
 golemthreat.7.text=난 네녀석이 정말 싫어.
 golemthreat.8.text=나가 죽어, 멍청이같은 녀석!
@@ -563,6 +572,10 @@ tc.addcluefail=발견한 단서를 기록할 곳이 없습니다...
 tc.addaspectpool=%n을(를) %s포인트 획득하였습니다.
 tc.addwarp=§5뒤틀림 수치가 증가하였습니다!§0
 tc.addwarptemp=§5뒤틀림 수치가 일시적으로 증가하였습니다!§0
+tc.addwarpsticky=§5뒤틀림 수치가 증가하였습니다!§0
+tc.removewarp=§5뒤틀림 수치가 감소하였습니다!§0
+tc.removewarpsticky=§5뒤틀림 수치가 감소하였습니다!§0
+tc.removewarptemp=§5뒤트림 수치가 일시적으로 감소하였습니다!§0
 tc.forbidden=§l§5금지된 지식 (%n)§0
 tc.forbidden.level.1=거의 무해함
 tc.forbidden.level.2=조금 위험함
@@ -1552,14 +1565,14 @@ tc.research_page.CAP_void.1=마법에 저항력이 강한 공허합금으로 완
 #
 tc.research_name.ARCANESPA=아케인 스파
 tc.research_text.ARCANESPA=지친 당신에게 휴식을...
-tc.research_page.ARCANESPA.1=일일이 물에다 정화용 입욕 소금을 타는 것은 귀찮은 일입니다.<BR>당신은 간단한 마법을 통해 자동으로 물과 소금을 섞어주는 기계를 발명했습니다. 기계의 버튼이 녹색 화살표일 때는 배합 모드를, 적색 직선일 때는 채우기 모드를 나타냅니다.<BR>배합 모드일 때는 소금과 물이 섞인 액체를 기계 위 5*5 공간에 채웁니다. 기계가 채우기 모드일 때는 소금의 유무와 상관 없이 탱크의 액체를 기계 위 5*5 공간에 채웁니다.<BR>당신은 기계에 양동이 등으로 클릭을 해 액체를 채울 수 있습니다. 또한 기계에 레드스톤 신호를 줘 작동을 멈출 수 있습니다.
+tc.research_page.ARCANESPA.1=일일이 물에다 정화용 입욕 소금을 타는 것은 귀찮은 일입니다.<BR>당신은 간단한 마법을 통해 자동으로 물과 소금을 섞어주는 기계를 발명했습니다. 기계의 버튼이 녹색 화살표일 때는 배합 모드를, 적색 직선일 때는 채우기 모드를 나타냅니다.<BR>배합 모드일 때는 소금과 물이 섞인 액체를 기계 위 5*5 공간에 채웁니다. 기계가 채우기 모드일 때는 소금의 유무와 상관 없이 탱크의 액체를 기계 위 5*5 공간에 채웁니다.<BR>기계에 레드스톤 신호를 줘 작동을 멈출 수 있습니다.
 #
 tc.research_name.SANESOAP=정화의 비누
 tc.research_text.SANESOAP=손씻기는 전염병 예방의 기본!
 tc.research_page.SANESOAP.1=몸을 씻는 것은 간단하지만, 당신의 정신에 있는 뒤틀림을 제거하는 것은 매우 어렵습니다.<BR>이 비누는 당신의 몸을 씻어내지만, 당신의 정신에 미치는 효과가 이 비누가 특별한 이유입니다. 이 비누는 작은 확률이지만 소량의 뒤틀림을 영구적으로 제거할 수 있는 확률을 가집니다.<BR>당신이 뒤틀림 해소 효과를 가지고 있거나 정화의 액체에 들어가 있을 때 뒤틀림을 제거할 확률이 높아집니다.
 #
 tc.research_name.SANITYCHECK=뒤틀림 측정기
-tc.research_text.SANITYCHECK=용기에 대한 성찰
+tc.research_text.SANITYCHECK=자신에 대한 성찰
 tc.research_page.SANITYCHECK.1=요즘 들어 마음이 혼란해지는 일들이 잦습니다.<BR>이 장치는 당신의 정신에 뒤틀림이 얼마나 많은 영향을 주는지를 나타냅니다.
 #
 tc.research_name.CRIMSON=크림슨 컬트
@@ -1568,15 +1581,66 @@ tc.research_page.CRIMSON.1=이 책의 대부분은 알 수 없는 기호들과 �
 #
 tc.research_name.OCULUS=개안 의식
 tc.research_text.OCULUS=나는 봤어! 나는 봤다고!
-tc.research_page.OCULUS.1=It was all so simple - you are amazed the Crimson Cultists have never discovered this.<BR>To perform the ritual you simply need to place four Eldritch Eyes on the specially marked keystone found at one of the strange altars where you first discovered the cult. The sinister node above the keystone must remain intact.<BR>Once this is done it is a simple matter of infusing a large amount of primal vis into the keystone with a wand - 100 units of each should be sufficient.
-tc.research_page.OCULUS.2=If you have done everything right the ritual should be complete and the so called "Eye" would be opened.<BR>Of course you have no idea what that means. No matter, only fools fear the unknown! 
+tc.research_page.OCULUS.1=이건 너무 간단한 문제였습니다 - 당신은 크림슨 세력이 발견한 놀라운 사실을 깨달았습니다. <BR> 의식을 수행하려면, 먼저 제단 중앙의 키스톤에 4개의 이계의 눈을 배치해야 합니다. 이때 반드시 키스톤 위에는 사악한 노드가 존재해야 합니다. <BR> 이제 남은 일은 완드를 통해 키스톤에 막대한 양의 비스를 주입하는 일만이 남았습니다 - 필요한 비스는 각각 100씩이면 충분합니다.
+tc.research_page.OCULUS.2=당신이 모든 것을 준비하고 의식을 끝마쳤다면, '눈'이라 명명된 것을 열 수 있습니다. <BR> 물론 당신은 저 너머에 뭐가 있는지는 들어가보기 전에는 전혀 알 수 없습니다만, 미지에 대한 공포는 멍청이들이나 겪는 일입니다. 그렇죠?
 #
 tc.research_name.ESSENTIARESERVOIR=고급 에센시아 저장소
-tc.research_text.ESSENTIARESERVOIR=취급주의
+tc.research_text.ESSENTIARESERVOIR=<취급주의>
 tc.research_page.ESSENTIARESERVOIR.1=대부분의 에센시아는 매우 휘발성이 강합니다. 그래서 특별히 관리에 주의해야 합니다 - 그래서 대부분의 마도학자들은 유리 단지를 에센시아 저장에 사용합니다.<BR>당신은 공허 합금이라는 환상적인 새 물질을 이용해 에센시아의 저장을 크게 개선하는 법을 발견했습니다. 
-tc.research_page.ESSENTIARESERVOIR.2=단지와 비슷하게, 이 장치는 한 면으로만 에센시아를 받거나 내보냅니다. 당신은 이 면의 방향을 정할 수 있습니다. 불행하게도, 이 장치는 골렘이나 에센시아 관을 통해서만 에센시아를 넣고 뺄 수 있습니다.<BR>에센시아가 채워진 이 장치를 부수는 건 음... 멍청한 생각입니다.<BR>당신은 이 대단한 발명을 동료 마도학자들에게 보여 주는 것으로 만족했습니다. 이상하게도, 그들 대부분은 장치가 완벽히 안전함을 확인시켰음에도 불구하고 스트레스에 의한 금속음이 날 때마다 두려움에 떨었습니다.
+tc.research_page.ESSENTIARESERVOIR.2=단지와 비슷하게, 이 장치는 한 면으로만 에센시아를 받거나 내보냅니다. 당신은 이 면의 방향을 정할 수 있습니다. 불행하게도, 이 장치는 골렘이나 에센시아 관을 통해서만 에센시아를 넣고 뺄 수 있습니다.<BR>에센시아가 채워진 이 장치를 부수는 건 음... 멍청한 생각입니다.<BR>이 대단한 발명을 동료 마도학자들에게 보여 주는 것으로 만족했지만 대부분은 장치가 완벽히 안전함을 확인시켰음에도 불구하고, 금속음이 들릴 때마다 겁쟁이처럼 벌벌 떨었습니다.
 #
 tc.research_name.ESSENTIACRYSTAL=에센시아 결정화
-tc.research_text.ESSENTIACRYSTAL=범용성? 간편성?
+tc.research_text.ESSENTIACRYSTAL=범용성 또는 간편성
 tc.research_page.ESSENTIACRYSTAL.1=드디어 액체 상태의 에센시아를 간단한 마법 공식으로 결정화하는 방법을 알아냈습니다!<BR>에센시아 결정화 장치는 주변의 에센시아 튜브에서 에센시아를 끌어와 천천히 결정화된 에센시아의 파편으로 바꿉니다. 결정화된 에센시아는 매우 안정적이고 취급이 용이합니다.<BR>에센시아 결정화기는 결정화된 에센시아를 전방의 인벤토리나 월드로 배출합니다. 이 장치는 레드스톤 신호로 비활성화 할 수 있습니다.<BR>비스 중계기를 통해 Terra 비스를 공급할 경우 빠른 정제 속도를 기대할 수 있습니다.
 #
+tc.research_name.BANNERS=배너
+tc.research_text.BANNERS=주의 : 장식용으로만 사용하세요!
+tc.research_page.BANNERS.1=마공학자라고 항상 세상을 뒤흔들 놀라운 발견을 해야 한다는 법은 없습니다. 때때로 간단히 만들 만한 것을 만들어보는 것도 좋지 않을까요? <BR> 이번에 새로 개발한 배너에 마법적인 문양을 새겨넣는 방법도 마련했습니다. 배너에 에센시아가 담긴 유리병으로 클릭하면 해당 문양이 배너에 새겨집니다. 앉은 채로 오른쪽 클릭해 문양을 제거할 수 있습니다.
+# 
+tc.research_name.BOTTLETAINT=병에 든 테인트
+tc.research_text.BOTTLETAINT=왜 이런 걸 원할까?
+tc.research_page.BOTTLETAINT.1=테인트를 청소하는 것은 중요하지만, 가끔은... 이걸 퍼뜨릴 필요도 있을지도... 모릅니다.<BR>유리병에 더러움을 담아 봉한 이 병은 던짐으로서 테인트를 확산시킬 수 있습니다. 물론 던질지... 말지는 자유입니다.
+# 
+tc.research_name.FOCALMANIPULATION=포커스 조작
+tc.research_text.FOCALMANIPULATION=진화!
+tc.research_page.FOCALMANIPULATION.1=완드 포커스들은 매우 놀라운 힘을 발휘하지만, 유연성이 부족합니다. 한 종류의 초점은 하나의 힘 밖에 발휘하지 못하는 것이 지금까지의 단점이었습니다. <BR> 우리는 포커스들을 미세하고도 정밀하게 조정하여 또 다른 힘을 발휘하도록 조작할 수 있습니다. 이를 위해선 당신이 포커스 조작기에 포커스를 놓아두고 필요한 경험치와 비스를 활성화된 노드를 통해 공급해주기만 하면 됩니다.
+tc.research_page.FOCALMANIPULATION.2=각각의 포커스들은 최대 5회까지 조정이 가능하지만, 횟수가 올라갈수록 당연히 대가도 커집니다. <BR>조정된 포커스의 효과는 영구적이므로 -  포커스를 조작할 때에는 신중함을 요구합니다.
+# 
+tc.research_name.VAMPBAT=5티어 업그레이드 : 흡혈 박쥐
+tc.research_text.VAMPBAT=고약한 작은 흡혈귀
+# 
+tc.research_name.PRIMPEARL=태초의 진주  
+tc.research_text.PRIMPEARL=모든 것의 시작-
+tc.research_page.PRIMPEARL.1=For the first time you find yourself with a puzzle that you do not think can be solved.<BR>This object contains pure primal aspects, but they possess properties unlike what you consider normal, everyday primal aspects. You have a few theories why this could be:<BR>Firstly this "pearl" could be the remnants of primal matter that was created at the dawn of reality - elementary magic that existed before it mingled and merged into compound aspects.
+tc.research_page.PRIMPEARL.2=Alternatively it could be primal matter from a place that does not conform to the known rules of magic as you have come to understand it. You are not sure which explanation is more worrying.<BR>Either way, the pearl is a potent artifact containing vast magical power and nearly unlimited potential.<BR>It is time you start putting it to use. 
+# 
+tc.research_name.PRIMNODE=태초의 노드 조작
+tc.research_text.PRIMNODE=그냥 둘을 비비고 기다려보는거지.
+tc.research_page.PRIMNODE.1=You have developed a bit of a wild theory that might be worth exploring. Why not bring a primordial pearl into contact with an aura node?<BR>Sure, bringing two such sources of raw magical energy into contact with each other might be catastrophic, but their interaction could also be highly... interesting.<BR>While anyone can do this, you are sure that completing this research has slightly improved your chances of getting a good result. Very slightly. 
+# 
+tc.research_name.ADVALCHEMYFURNACE=강화 연성 화로
+tc.research_text.ADVALCHEMYFURNACE=대량생산 & 대량소비
+tc.research_page.ADVALCHEMYFURNACE.1=The standard alchemical furnace is fairly slow and requires fuel to operate. While neither of those are particularly difficult obstacles to you, the fact that it is unable to process large sources of essentia is something that can not be ignored. Unfortunately the instability of the essentia slurry it creates makes it dangerous to gather too much of it in one location.<BR>With the discovery of Primordial Pearls you have found a solution to that problem - The Advanced Alchemical Furnace.<BR>Using alchemical constructs that have been strengthened with void    
+tc.research_page.ADVALCHEMYFURNACE.2=metal and exposed to a primordial pearl's strange energies much more slurry can be processed at once and at much greater speeds. The pearl is not consumed during the crafting process.<BR>Instead of fuel, heat is generated by ignis vis and instead of relying on heat alone perditio vis breaks down objects almost instantly. Lastly aqua vis keeps everything running smoothly and prevents the slurry from settling and causing problems.<BR>The machine requires a considerable amount of heat to function and requires a constant supply of ignis vis even when not operating. Perditio and aqua vis is only used when the machine is smelting. 
+# 
+tc.research_name.FLUXSCRUB=플럭스 수집장치
+tc.research_text.FLUXSCRUB=지저분한 마술사에 대한 혜택
+tc.research_page.FLUXSCRUB.1=Even the most skilled thaumaturge occasionally leaves a mess in the form of flux. It is a nuisance everyone has to deal with, but this machine removes the drudgery involved.<BR>The flux scrubber, when powered with aer vis, will slowly remove any form of flux within 16 blocks of where it is placed. What is more, it is able to reclaim a small portion of the magic that makes up the flux in the form of praecantatio essentia.<BR>It's internal buffer is very small and it will continue operating even when full, so it must be emptied if you wish to reclaim all the essentia. 
+# 
+tc.research_name.ENTEROUTER=아우터 랜드
+tc.research_text.ENTEROUTER=이 지옥같은 행성에서 벗어나야 합니다!
+tc.research_page.ENTEROUTER.1=확실하진 않지만, 계시에서 느낀 이계는 이상했지만, 돌과 일부가 무너져내린 뒤틀린 미로는 아니었습니다. <BR>뭔가 이상합니다. - 이 구조는 무언가를 위해 설계된 것이 아닌, 치명적인 미로인 듯 합니다. <BR> 이상한 에너지가 넘쳐나고, 마법은 이상 행동을 보입니다. 심지어 이상한 이계의 생물체들도 가득합니다.
+# 
+tc.research_name.OUTERREV=아우터 랜드에 대한 계시
+tc.research_text.OUTERREV=만물은 겉 모양 그대로는 아니다.
+tc.research_page.OUTERREV.1=드디어 의혹이 풀렸습니다. 이 공간은 단순히 무시무시한 것들이 나오는 곳이 아닌 완전히 다른 무언가이고, 심지어 현실로 인식되지만 현실이 아닌 것 같습니다. - 그것은 물리적인 것과 정신적인 것에 간섭할 수 있었습니다. <BR> 벽에 새겨진 문자들을 해독하자 확신이 들었습니다. 이 공간은 함정이었습니다. - 방문자와 약한 자를 걸러내는것이지요. 무엇때문에 이런 것이 존재하는지는 확실치 않습니다.
+# 
+tc.research_name.SINSTONE=사악한 자철석
+tc.research_text.SINSTONE=잠시후 우회전입니다.
+tc.research_page.SINSTONE.1=You have made an interesting discovery during your study of nodes. Different kinds of nodes emit varying types of radiant energy, but none are quite as distinct as that of Sinister nodes.<BR>The energy emitted by Sinister nodes is quite unique and simple to track. By infusing a piece of flint you think you can create a simple scrying device that will light up whenever it is pointed towards such a node.<BR>The range is limited, but it is a worthwhile invention since you have often found Sinister nodes in the most interesting of places. 
+# 
+tc.research_name.PRIMALCRUSHER=태초의 파쇄기
+tc.research_text.PRIMALCRUSHER=파괘한다!
+tc.research_page.PRIMALCRUSHER.1=The theory behind infusion crafting is simple - infuse a single object with essentia and the properties of other objects. There are limits however, but it seems with the discovery of the primordial pearl these limits are becoming less and less.<BR>As an experiment you tried infusing the properties of completely different objects into the pearl with suprising success. The Primal Crusher is the first practical application of this discovery.<BR>By combining a Shovel of the Earthmover and a Pickaxe of the Core with their void metal counterparts you created a 
+tc.research_page.PRIMALCRUSHER.2=tool of unrivaled destructive capabilities that has most of the features of its component pieces.<BR>The Primal Crusher can mine through earth and stone with equal ease and does so in a 3x3 area. Like the Pickaxe of the Core it occasionally mines native clusters instead of raw ore.<BR>It repairs itself over time, has high enchantability and serves as a relatively good weapon in a pinch.<BR>Unfortunately it seems purely destructive in nature and has lost the construction and detection abilities of its parent tools. 
+# 
