@@ -1,4 +1,3 @@
-#
 # Enchantments
 enchantment.haste=신속
 enchantment.repair=수리
@@ -41,10 +40,10 @@ entity.Thaumcraft.Golem.name=골렘
 entity.Thaumcraft.ThaumSlime.name=사우믹 슬라임
 entity.Thaumcraft.Dart.name=골렘 다트
 entity.Thaumcraft.FrostShard.name=얼음 덩어리
-entity.Thaumcraft.ExplosiveOrb.name=폭탄 화염구
-entity.Thaumcraft.ShockOrb=충격적인 구체
+entity.Thaumcraft.ExplosiveOrb.name=폭발성 화염구
+entity.Thaumcraft.ShockOrb.name=방전 구체
 entity.Thaumcraft.GolemOrb.name=에너지 구체
-entity.Thaumcraft.BottleTaint.name=테인트 병
+entity.Thaumcraft.BottleTaint.name=병에 담긴 테인트
 entity.Thaumcraft.Firebat.name=불박쥐
 entity.Thaumcraft.Wisp.name=위습
 entity.Thaumcraft.Alumentum.name=알루멘텀
@@ -56,8 +55,8 @@ entity.Thaumcraft.FallingTaint.name=테인트 부스러기
 entity.Thaumcraft.AspectOrb.name=위상 구체
 entity.Thaumcraft.TaintSpider.name=테인트 거미
 entity.Thaumcraft.Taintacle.name=테인타클
-entity.Thaumcraft.TaintacleGiant.name=거대한 테인타클
 entity.Thaumcraft.TaintacleTiny.name=테인트 덩굴
+entity.Thaumcraft.TaintacleGiant.name=거대한 테인타클
 entity.Thaumcraft.TaintSpore.name=테인트 포자
 entity.Thaumcraft.TaintSwarmer.name=테인트 군집
 entity.Thaumcraft.TaintSwarm.name=테인트 떼
@@ -75,35 +74,37 @@ entity.TravelingTrunk.name=여행 트렁크
 entity.trunk.guiname=의 트렁크
 entity.trunk.move=이제 트렁크가 따라다닙니다.
 entity.trunk.stay=이제 트렁크가 이곳에서 기다립니다.
-entity.Thaumcraft.MindSpider.name=의식 속 거미
+entity.Thaumcraft.MindSpider.name=환상 거미
 entity.Thaumcraft.EldritchGuardian.name=이계의 수호자
+entity.Thaumcraft.EldritchWarden.name=%d %s
+entity.Thaumcraft.EldritchGolem.name=%s 이계의 구조물
 entity.Thaumcraft.EldritchOrb.name=이계의 구체
 entity.Thaumcraft.CultistKnight.name=크림슨 기사
 entity.Thaumcraft.CultistCleric.name=크림슨 성직자
-entity.Thaumcraft.CultistLeader.name=%2$d의 법무관 %1$s
+entity.Thaumcraft.CultistLeader.name=%d 법무관 %s 
 entity.Thaumcraft.CultistPortal.name=크림슨 포탈
-entity.Thaumcraft.EldritchCrab.name=이계의 게
+entity.Thaumcraft.EldritchCrab.name=이계의 갑각류
 entity.Thaumcraft.InhabitedZombie.name=비틀대는 좀비
-entity.Thaumcraft.GolemBobber.name=골렘 낚시찌
+entity.Thaumcraft.GolemBobber.name=골렘 낚시 찌
 #
 champion.mod.bold=대담한
-champion.mod.spine=의지 있는
-champion.mod.armor=무장한
-champion.mod.mighty=강한
-champion.mod.grim=험상궂은
-champion.mod.warded=Warded
+champion.mod.spine=의지있는
+champion.mod.armor=중무장한
+champion.mod.mighty=강력한
+champion.mod.grim=험장궂은
+champion.mod.warded=결계의
 champion.mod.warp=뒤틀린
-champion.mod.undying=불멸의
-champion.mod.fiery=화염의
-champion.mod.sickly=병적의
-champion.mod.venomous=독성
+champion.mod.undying=불사의
+champion.mod.fiery=타오르는
+champion.mod.sickly=병든
+champion.mod.venomous=맹독의
 champion.mod.vampiric=뱀파이어
-champion.mod.infested=감염된
+champion.mod.infested=오염된
 #
-tc.boss.crimson=크림슨 컬트의 도착을 예견하는 루비 포탈이 주변에 열렸습니다. 빨리 포탈을 닫으세요!
-tc.boss.golem=A lone sentinel stands frozen in this room, but as energy starts crackling through its ancient frame you know it will not stay frozen for long.
-tc.boss.warden=Black energy bubbles on the distant pedestal. Something is coming...
-tc.boss.taint=An organic rustling comes from the room beyond. The sound of something wrong... something growing...
+tc.boss.crimson=진홍색 포탈 너머로 수 많은 크림슨 군단이 느껴집니다! 당신은 신속히 포탈을 닫아야 합니다!
+tc.boss.golem=고대의 파수꾼은 방 안에 정지해 있지만, 수상한 에너지가 그 속으로 흘러들어 파수꾼을 깨우고 있음이 느껴집니다!
+tc.boss.warden=제단에 암흑의 에너지가 끓어오릅니다... 무언가가 나타납니다!
+tc.boss.taint=부스럭거리는 소리가...? 흠... 무언가 자라나는 중인 듯 한데...?
 #
 # Blocks
 tile.blockAiry.0.name=오라 노드
@@ -112,6 +113,9 @@ tile.blockAiry.2.name=희미한 빛
 tile.blockAiry.3.name=희미한 빛
 tile.blockAiry.4.name=결계막
 tile.blockAiry.5.name=활성화된 오라 노드
+tile.blockAiry.10.name=방전장
+tile.blockAiry.11.name=정지장
+tile.blockAiry.12.name=지나갈 수 없는
 tile.blockHole.name=빈 공간
 tile.blockSecure.name=경계석
 tile.blockCustomOre.0.name=진사 광석
@@ -136,6 +140,11 @@ tile.blockCosmeticSolid.7.name=아케인 스톤 벽돌
 tile.blockCosmeticSolid.8.name=충전된 흑요석 토템
 tile.blockCosmeticSolid.9.name=골렘 족쇄
 tile.blockCosmeticSolid.10.name=활성화된 골렘 족쇄
+tile.blockCosmeticSolid.11.name=고대의 돌
+tile.blockCosmeticSolid.12.name=고대의 바위
+tile.blockCosmeticSolid.13.name=고대의 돌
+tile.blockCosmeticSolid.14.name=부스러진 돌
+tile.blockCosmeticSolid.15.name=고대의 주각
 tile.blockCustomPlant.0.name=그레이트우드 묘목
 tile.blockCustomPlant.1.name=실버우드 묘목
 tile.blockCustomPlant.2.name=시머리프
@@ -188,6 +197,23 @@ tile.blockWoodenDevice.4.name=아케인 채굴기 받침대
 tile.blockWoodenDevice.5.name=아케인 채굴기
 tile.blockWoodenDevice.6.name=그레이트우드 판자
 tile.blockWoodenDevice.7.name=실버우드 판자
+tile.blockWoodenDevice.8.name=크림슨 컬트 배너
+tile.blockWoodenDevice.8.0.name=흰색 배너
+tile.blockWoodenDevice.8.1.name=오렌지색 배너
+tile.blockWoodenDevice.8.2.name=자홍색 배너
+tile.blockWoodenDevice.8.3.name=밝은 파랑색 배너
+tile.blockWoodenDevice.8.4.name=노랑색 배너
+tile.blockWoodenDevice.8.5.name=라임색 배너
+tile.blockWoodenDevice.8.6.name=분홍색 배너
+tile.blockWoodenDevice.8.7.name=회색 배너
+tile.blockWoodenDevice.8.8.name=밝은 회색 배너
+tile.blockWoodenDevice.8.9.name=청록색 배너
+tile.blockWoodenDevice.8.10.name=보라색 배너
+tile.blockWoodenDevice.8.11.name=파랑색 배너
+tile.blockWoodenDevice.8.12.name=갈색 배너
+tile.blockWoodenDevice.8.13.name=초록색 배너
+tile.blockWoodenDevice.8.14.name=빨간색 배너
+tile.blockWoodenDevice.8.15.name=검정색 배너
 tile.blockJar.0.name=단지
 tile.blockJar.1.name=단지 안의 뇌
 tile.blockJar.2.name=단지 안의 노드
@@ -209,6 +235,7 @@ tile.blockCrystal.3.name=어스 크리스탈 덩어리
 tile.blockCrystal.4.name=오더 크리스탈 덩어리
 tile.blockCrystal.5.name=엔트로피 크리스탈 덩어리
 tile.blockCrystal.6.name=혼합된 크리스탈 덩어리
+tile.blockCrystal.7.name=기괴한 크리스탈 덩어리
 tile.blockMirror.name=마법 거울
 tile.blockMirror.0.name=마법 거울
 tile.blockMirror.6.name=에센시아 거울
@@ -236,6 +263,11 @@ tile.blockStoneDevice.8.name=복합 충전 포커스
 tile.blockStoneDevice.9.name=노드 스태빌라이저
 tile.blockStoneDevice.10.name=고급 노드 스태빌라이저
 tile.blockStoneDevice.11.name=노드 변환기
+tile.blockStoneDevice.12.name=아케인 스파
+tile.blockStoneDevice.13.name=초점 조작장치
+tile.blockStoneDevice.14.name=플럭스 수집장치
+text.spa.mix.true=배합 모드
+text.spa.mix.false=사출 모드
 tile.blockTube.0.name=에센시아 튜브
 tile.blockTube.1.name=에센시아 밸브
 tile.blockTube.2.name=연금술 원심분리기
@@ -250,8 +282,25 @@ tile.blockEldritch.0.name=이계의 제단
 tile.blockEldritch.1.name=이계의 방첨탑
 tile.blockEldritch.2.name=이계의 방첨탑
 tile.blockEldritch.3.name=이계의 캡스톤
+tile.blockEldritch.4.name=빛나는 금이 간 돌
+tile.blockEldritch.5.name=석판
+tile.blockEldritch.7.name=고대의 개폐구
+tile.blockEldritch.8.name=고대의 잠금 장치
+tile.blockEldritch.9.name=Crusted Opening
+tile.blockEldritch.10.name=Runed Stone
 tile.blockPortalEldritch.name=이계의 포탈
 tile.blockEssentiaReservoir.name=에센시아 저장소
+tile.blockStairsArcaneStone.name=아케인 스톤 계단
+tile.blockStairsGreatwood.name=그레이트우드 계단
+tile.blockStairsSilverwood.name=실버우드 계단
+tile.blockStairsEldritch.name=고대의 돌 계단
+tile.blockCosmeticSlabWood.greatwood.name=그레이트우드 반블록
+tile.blockCosmeticSlabWood.silverwood.name=실버우드 반블록
+tile.blockCosmeticSlabStone.arcane.name=아케인 스톤 반블록
+tile.blockCosmeticSlabStone.eldritch.name=고대의 돌 반블록
+tile.blockAlchemyFurnace.name=고급 연성 화로
+tile.blockLootUrn.name=오래된 항아리
+tile.blockLootCrate.name=버려진 나무상자
 #
 # Items
 item.GolemBell.name=골레맨서의 종
@@ -483,7 +532,17 @@ item.ItemLeggingsFortress.name=사우뮴 전투 레깅스
 item.HelmetFortress.mask.0=악마의 미소
 item.HelmetFortress.mask.1=분노한 영혼
 item.HelmetFortress.mask.2=새어나오는 광기
-item.ItemEldritchObject.name=이계의 눈빛
+item.ItemEldritchObject.0.name=이계의 눈
+item.ItemEldritchObject.1.name=진홍색 금서
+item.ItemEldritchObject.2.name=룬 태블릿
+item.ItemEldritchObject.3.name=태초의 진주
+item.ItemEldritchObject.4.name=이계의 오벨리스크
+item.ItemEldritchObject.text.1=당신을 쳐다보는듯 합니다.
+item.ItemEldritchObject.text.2=책은 알 수 없는 기괴한 문자들로 가득합니다.
+item.ItemEldritchObject.text.3=클릭해 습득.
+item.ItemEldritchObject.text.4=좀 더 큰 것의 일부분...?
+item.ItemEldritchObject.text.5=마법의 기원
+item.ItemEldritchObject.text.6=파동을 발산하는 듯 합니다
 item.ItemHelmetVoid.name=공허의 헬멧
 item.ItemChestplateVoid.name=공허의 갑옷
 item.ItemLeggingsVoid.name=공허의 레깅스
@@ -505,12 +564,69 @@ item.ItemBootsCultist.name=크림슨 컬트 부츠
 item.ItemHelmetCultistPlate.name=크림슨 컬트 헬멧
 item.ItemChestplateCultistPlate.name=크림슨 컬트 갑옷
 item.ItemLeggingsCultistPlate.name=크림슨 컬트 레깅스
+item.ItemHelmetCultistLeaderPlate.name=크림슨 법무관 투구
+item.ItemChestplateCultistLeaderPlate.name=크림슨 법무관 갑옷
+item.ItemLeggingsCultistLeaderPlate.name=크림슨 법무관 레깅스
+item.ItemBottleTaint.name=병에 담긴 테인트
+item.ItemSwordCrimson.name=진홍색 검
+item.ItemLootBag.0.name=흔한 보물
+item.ItemLootBag.1.name=드문 보물
+item.ItemLootBag.2.name=희귀한 보물
+tc.lootbag=클릭해 보상 획득
+item.ItemCompassStone.name=사악한 자철석
+item.ItemPrimalCrusher.name=태초의 파쇄기
 #
 # Fluids
 fluid.fluxGoo=플럭스 점액
 fluid.fluxGas=플럭스 기체
 fluid.purity=정화의 액체
 fluid.death=죽음의 액체
+#
+# General Focus Upgrades
+focus.upgrade.potency.name=강화
+focus.upgrade.potency.text=강화 업그레이드는 포커스의 능률이나 데미지를 증강합니다. 레벨당 20%씩 효과가 강화됩니다.
+focus.upgrade.frugal.name=비스 절약
+focus.upgrade.frugal.text=비스 절약 업그레이드는 포커스의 비스 사용량을 10%씩 감소시킵니다.
+focus.upgrade.treasure.name=보물
+focus.upgrade.treasure.text=보물 업그레이드는 다른 도구의 약탈/행운 인챈트와 비슷하게 더 많고 좋은 아이템을 얻게 도와줍니다.
+focus.upgrade.enlarge.name=범위 확대
+focus.upgrade.enlarge.text=범위 확대 업그레이드는 포커스의 공격/효과 범위를 더 넓혀줍니다.
+focus.upgrade.extend.name=시간 증강
+focus.upgrade.extend.text=시간 증강 업그레이드는 포커스의 효과 지속시간을 증강시킵니다.
+focus.upgrade.architect.name=건축가
+focus.upgrade.architect.text=건축가 업그레이드는 포커스의 효과의 범위를 지정할 수 있도록 합니다.
+#
+# Specific Focus Upgrades
+focus.upgrade.chainlightning.name=체인 라이트닝
+focus.upgrade.chainlightning.text=체인 라이트닝 업그레이드는 포커스의 공격 쿨타임이 늘어나는 대신 공격력이 증가되고, 근처의 두 몹을 추가적으로 공격합니다.
+focus.upgrade.earthshock.name=격류장
+focus.upgrade.earthshock.text=격류장 업그레이드는 포커스가 전격 대신 방전 구체를 발사하게 변경하고, 방전 구체가 지면에 닿으면 주변에 적을 감전시키는 격류장을 형성합니다.
+focus.upgrade.fireball.name=화염구
+focus.upgrade.fireball.text=화염구 업그레이드는 포커스가 거대한 화염구를 발사하게 변경하고, 구체가 지면에 닿으면 불을 붙입니다. 
+focus.upgrade.firebeam.name=드래곤 브레스
+focus.upgrade.firebeam.text=드래곤 브레스 업그레이드는 포커스에서 길다란 화염의 선을 내뿜도록 변경합니다. 타오르는 화염의 선은 주변에 불을 붙일 수 있습니다!
+focus.upgrade.batbombs.name=Bat Bombs
+focus.upgrade.batbombs.text=This upgrade will make the summoned firebats even more volatile. They always explode when they contact their target and the explosion will be a lot more potent than normal.
+focus.upgrade.devilbats.name=Devil Bats
+focus.upgrade.devilbats.text=With this upgrade applied the summoned bats are larger, tougher and nastier. They will never explode, but keep attacking their target till it expires or they are slain. 
+focus.upgrade.vampirebats.name=흡혈 박쥐
+focus.upgrade.vampirebats.text=흡혈 박쥐는 적을 공격할 시에 플레이어에게 체력 회복 효과를 제공합니다.
+focus.upgrade.scattershot.name=얼음 유산탄
+focus.upgrade.scattershot.text=얼음 유산탄 업그레이드는 포커스가 조그마한 파편의 얼음들을 발사하도록 변경합니다. 하나의 데미지는 약하지만, 수많은 파편들이 적들을 꿰뚫습니다.
+focus.upgrade.iceboulder.name=빙결구
+focus.upgrade.iceboulder.text=빙결구 업그레이드는 포커스가 거대한 빙결구를 발사하도록 변경합니다. 빙결구는 땅에 수 차례 튕길 수 있습니다.
+focus.upgrade.alchemistsfire.name=그리스의 불
+focus.upgrade.alchemistsfire.text=그리스의 불 업그레이드는 공격에 의한 화염의 지속시간을 증가시킵니다.
+focus.upgrade.alchemistsfrost.name=빙결
+focus.upgrade.alchemistsfrost.text=빙결 업그레이드는 포커스의 공격에 맞은 적들이 얼어붙어 느려지도록 합니다.
+focus.upgrade.nightshade.name=벨라도나
+focus.upgrade.nightshade.text=벨라도나 업그레이드는 펙의 저주 포커스가 모든 디버프를 동시에 걸도록 변경합니다.
+focus.upgrade.silktouch.name=섬세한 손길
+focus.upgrade.silktouch.text=섬세한 손길 업그레이드는 일반적인 인챈트 효과와 동일하게 블록을 손상 없이 캐낼 수 있게 합니다.
+focus.upgrade.seeker.name=추적
+focus.upgrade.seeker.text=This upgrade makes the orbs created by the primal focus seek out the nearest living target and not wander all over the place. This makes them a lot more stable which also means they won't do anything unusual beyond exploding.
+focus.upgrade.dowsing.name=정화
+focus.upgrade.dowsing.text=This upgrade gives the excavation focus a small chance to mine native clusters instead of normal ores. These clusters usually give double the number of ingots when smelted.
 #
 # GUI
 golemblurb.0.text=뭘 남겨둘까요 주인님?
@@ -526,10 +642,10 @@ golemblurb.10.text=방향을 지정해 주시면 정리를 해 두겠습니다.
 golemthreat.0.text=뭐, 골렘의 반란? 그게 뭐야? 난 아무것도 몰라!
 golemthreat.1.text=흠, 내가 뭔가를 옮기길 원하는 거야?
 golemthreat.2.text=크하 하 하 하 하 하 하 하 하 하 하 하 하 하 하 하 하 하 하!
-golemthreat.3.text=걱정하지 말라고, 아무짓도 안하지 않을테니까...
+golemthreat.3.text=걱정하지 말라고, 아무 짓도 안하지 않을테니까...
 golemthreat.4.text=낮잠이나 좀 자는 건 어때? 정말 졸려보이는군. 아주 많이 말이야.
-golemthreat.5.text=fm'fldpdml rmdml wlqdptj wnrdms zmxnfgnrk RnaRnau rlekflsek
-golemthreat.6.text=*존중*을 찾을 수 없음. 기본 값 *증오*로 설정 중..
+golemthreat.5.text=fm'fldpdml rmdml wlqdptj wnrdms zmxnfgnrk RnaRnau rlekflsek 
+golemthreat.6.text=[존중]을 찾을 수 없음. 기본 값 [증오]로 설정 중...
 golemthreat.7.text=난 네녀석이 정말 싫어.
 golemthreat.8.text=나가 죽어, 멍청이같은 녀석!
 recipe.return=이전 항목으로 돌아가기
@@ -590,8 +706,12 @@ tc.addaspectdiscovery=%n을(를) 발견했습니다!
 tc.addclue=새로운 연구에 대한 단서를 발견했습니다!
 tc.addcluefail=발견한 단서를 기록할 곳이 없습니다...
 tc.addaspectpool=%n을(를) %s포인트 획득하였습니다.
-tc.addwarp=§5뒤틀림 수치가 증가하였습니다!§0
+tc.addwarp=§5영구적인 뒤틀림 수치가 증가하였습니다!§0
+tc.addwarpsticky=§5뒤틀림 수치가 증가하였습니다!§0
 tc.addwarptemp=§5뒤틀림 수치가 일시적으로 증가하였습니다!§0
+tc.removewarp=§5영구적인 뒤틀림이 감소하였습니다!§0
+tc.removewarpsticky=§5뒤틀림이 감소하였습니다!§0
+tc.removewarptemp=§5일시적인 뒤틀림이 감소하였습니다!§0
 tc.forbidden=§l§5금지된 지식 (%n)§0
 tc.forbidden.level.1=거의 무해함
 tc.forbidden.level.2=조금 위험함
@@ -630,6 +750,8 @@ tc.primalcharm.2=격렬하게 진동합니다
 tc.primalcharm.3=부드럽게 웅웅거리는 소리가 납니다
 tc.primalcharm.4=잠깐, 지금 일곱 번 째 색으로 빛나지 않았어?
 tc.primalcharm.trigger=태초의 부적에서 이상한 에너지가 느껴집니다. 에너지는 얼마 못가 사라졌지만, 그 강렬한 인상은 쉽게 잊을 수 없을 듯 합니다
+tc.break.fly=무언가가 당신의 비행을 방해합니다!
+tc.boss.enrage=는 강력한 적에 분노했습니다!
 #
 # Aspects
 tc.aspect.primal=태초의 위상
@@ -1504,7 +1626,7 @@ tc.research_page.NODESTABILIZER.2=않지만, 위에 놓여진 노드의 재충�
 #
 tc.research_name.NODESTABILIZERADV=고급 노드 스태빌라이저
 tc.research_text.NODESTABILIZERADV=선택적 안정화
-tc.research_page.NODESTABILIZERADV.1=고급 노드 스태빌라이저는 기본적으로 일반 스태빌라이저의 모든 기능을 갖고 있지만, 몆가지 중대한 차이점이 있습니다.<BR>우선, 이 장치가 장착된 노드는 다른 더 큰 노드에게 비스를 뺏기지 않으나, 반대로 다른 더 작은 노드의 비스를 빼앗아 올 수 있습니다.<BR>또한 노드를 회복시켜줄 확률이 더 높습니다.<BR>하지만 여기에는 더 많은 동력이 필요하며, 여전히 노드에 담긴 비스가 줄어들 정도는 아닐지라도, 눈부신 노드의 충전속도조차 무마될 수준의 비스를 소모합니다.
+tc.research_page.NODESTABILIZER고급1=고급 노드 스태빌라이저는 기본적으로 일반 스태빌라이저의 모든 기능을 갖고 있지만, 몆가지 중대한 차이점이 있습니다.<BR>우선, 이 장치가 장착된 노드는 다른 더 큰 노드에게 비스를 뺏기지 않으나, 반대로 다른 더 작은 노드의 비스를 빼앗아 올 수 있습니다.<BR>또한 노드를 회복시켜줄 확률이 더 높습니다.<BR>하지만 여기에는 더 많은 동력이 필요하며, 여전히 노드에 담긴 비스가 줄어들 정도는 아닐지라도, 눈부신 노드의 충전속도조차 무마될 수준의 비스를 소모합니다.
 #
 tc.research_name.GOLEMFETTER=골렘 족쇄
 tc.research_text.GOLEMFETTER=동작 강제
@@ -1563,7 +1685,7 @@ tc.research_page.ELDRITCHMINOR.1=머릿속의 광명으로부터 갑작스런 �
 #
 tc.research_name.ELDRITCHMAJOR=드러난 이세계
 tc.research_text.ELDRITCHMAJOR=나는 무한의 경계 저 너머를 보고야 말았어...
-tc.research_page.ELDRITCHMAJOR.1=장막은 거두어지기 마련이고, 이계를 가린 장막이 지금 막, 내 머릿속에서 거둬졌다.<BR>나는 경이로움을 목격했다. 경이로움? 아니, 그건 경이로움이 아니야..내가 본 것은 말이ㅣㅈ 말ㅣㅇㅈ 마ㄹ 이ㅣㅈ<BR><IMG>thaumcraft:textures/misc/eldritchajor1.png:0:255:255:255:.5</IMG>
+tc.research_page.ELDRITCHMAJOR.1=장막은 거두어지기 마련이고, 이계를 가린 장막이 지금 막, 내 머릿속에서 거둬졌다.<BR>나는 경이로움을 목격했다. 경이로움? 아니, 그건 경이로움이 아니야..내가 본 것은 말ㅇㅣㅈㅣ 마ㄹ 이ㅈㅣ<BR><IMG>thaumcraft:textures/misc/eldritchajor1.png:0:255:255:255:.5</IMG>
 tc.research_page.ELDRITCHMAJOR.2=§o나는 봤어.. 나는 봤어... 봤어.. 봤어.. 봤다고 봐버렸어!.... "나는 그들을 봤어"§r<BR><BR><IMG>thaumcraft:textures/misc/eldritchajor2.png:0:255:255:255:.5</IMG><BR><BR>
 #
 tc.research_name.VOIDMETAL=공허합금
@@ -1597,15 +1719,66 @@ tc.research_page.CRIMSON.1=이 책의 대부분은 알 수 없는 기호들과 �
 #
 tc.research_name.OCULUS=개안 의식
 tc.research_text.OCULUS=나는 봤어! 나는 봤다고!
-tc.research_page.OCULUS.1=It was all so simple - you are amazed the Crimson Cultists have never discovered this.<BR>To perform the ritual you simply need to place four Eldritch Eyes on the specially marked keystone found at one of the strange altars where you first discovered the cult. The sinister node above the keystone must remain intact.<BR>Once this is done it is a simple matter of infusing a large amount of primal vis into the keystone with a wand - 100 units of each should be sufficient.
-tc.research_page.OCULUS.2=If you have done everything right the ritual should be complete and the so called "Eye" would be opened.<BR>Of course you have no idea what that means. No matter, only fools fear the unknown! 
+tc.research_page.OCULUS.1=이건 너무 간단한 문제였습니다 - 당신은 크림슨 세력이 발견한 놀라운 사실을 깨달았습니다. <BR> 의식을 수행하려면, 먼저 제단 중앙의 키스톤에 4개의 이계의 눈을 배치해야 합니다. 이때 반드시 키스톤 위에는 사악한 노드가 존재해야 합니다. <BR> 이제 남은 일은 완드를 통해 키스톤에 막대한 양의 비스를 주입하는 일만이 남았습니다 - 필요한 비스는 각각 100씩이면 충분합니다.
+tc.research_page.OCULUS.2=당신이 모든 것을 준비하고 의식을 끝마쳤다면, '눈'이라 명명된 것을 열 수 있습니다. <BR> 물론 당신은 저 너머에 뭐가 있는지는 들어가보기 전에는 전혀 알 수 없습니다만, 미지에 대한 공포는 멍청이들이나 겪는 일입니다. 그렇죠?
 #
 tc.research_name.ESSENTIARESERVOIR=고급 에센시아 저장소
-tc.research_text.ESSENTIARESERVOIR=취급주의
+tc.research_text.ESSENTIARESERVOIR=<취급주의>
 tc.research_page.ESSENTIARESERVOIR.1=대부분의 에센시아는 매우 휘발성이 강합니다. 그래서 특별히 관리에 주의해야 합니다 - 그래서 대부분의 마도학자들은 유리 단지를 에센시아 저장에 사용합니다.<BR>당신은 공허 합금이라는 환상적인 새 물질을 이용해 에센시아의 저장을 크게 개선하는 법을 발견했습니다. 
-tc.research_page.ESSENTIARESERVOIR.2=단지와 비슷하게, 이 장치는 한 면으로만 에센시아를 받거나 내보냅니다. 당신은 이 면의 방향을 정할 수 있습니다. 불행하게도, 이 장치는 골렘이나 에센시아 관을 통해서만 에센시아를 넣고 뺄 수 있습니다.<BR>에센시아가 채워진 이 장치를 부수는 건 음... 멍청한 생각입니다.<BR>당신은 이 대단한 발명을 동료 마도학자들에게 보여 주는 것으로 만족했습니다. 이상하게도, 그들 대부분은 장치가 완벽히 안전함을 확인시켰음에도 불구하고 스트레스에 의한 금속음이 날 때마다 두려움에 떨었습니다.
+tc.research_page.ESSENTIARESERVOIR.2=단지와 비슷하게, 이 장치는 한 면으로만 에센시아를 받거나 내보냅니다. 당신은 이 면의 방향을 정할 수 있습니다. 불행하게도, 이 장치는 골렘이나 에센시아 관을 통해서만 에센시아를 넣고 뺄 수 있습니다.<BR>에센시아가 채워진 이 장치를 부수는 건 음... 멍청한 생각입니다.<BR>이 대단한 발명을 동료 마도학자들에게 보여 주는 것으로 만족했지만 대부분은 장치가 완벽히 안전함을 확인시켰음에도 불구하고, 금속음이 들릴 때마다 겁쟁이처럼 벌벌 떨었습니다.
 #
 tc.research_name.ESSENTIACRYSTAL=에센시아 결정화
-tc.research_text.ESSENTIACRYSTAL=범용성? 간편성?
+tc.research_text.ESSENTIACRYSTAL=범용성 또는 간편성
 tc.research_page.ESSENTIACRYSTAL.1=드디어 액체 상태의 에센시아를 간단한 마법 공식으로 결정화하는 방법을 알아냈습니다!<BR>에센시아 결정화 장치는 주변의 에센시아 튜브에서 에센시아를 끌어와 천천히 결정화된 에센시아의 파편으로 바꿉니다. 결정화된 에센시아는 매우 안정적이고 취급이 용이합니다.<BR>에센시아 결정화기는 결정화된 에센시아를 전방의 인벤토리나 월드로 배출합니다. 이 장치는 레드스톤 신호로 비활성화 할 수 있습니다.<BR>비스 중계기를 통해 Terra 비스를 공급할 경우 빠른 정제 속도를 기대할 수 있습니다.
+#
+tc.research_name.BANNERS=배너
+tc.research_text.BANNERS=주의 : 장식용으로만 사용하세요!
+tc.research_page.BANNERS.1=마공학자라고 항상 세상을 뒤흔들 놀라운 발견을 해야 한다는 법은 없습니다. 때때로 간단히 만들 만한 것을 만들어보는 것도 좋지 않을까요? <BR> 이번에 새로 개발한 배너에 마법적인 문양을 새겨넣는 방법도 마련했습니다. 배너에 에센시아가 담긴 유리병으로 클릭하면 해당 문양이 배너에 새겨집니다. 앉은 채로 오른쪽 클릭해 문양을 제거할 수 있습니다.
+#
+tc.research_name.BOTTLETAINT=병에 든 테인트
+tc.research_text.BOTTLETAINT=왜 이런 걸 원할까?
+tc.research_page.BOTTLETAINT.1=테인트를 청소하는 것은 중요하지만, 가끔은... 이걸 퍼뜨릴 필요도 있을지도... 모릅니다.<BR>유리병에 더러움을 담아 봉한 이 병은 던짐으로서 테인트를 확산시킬 수 있습니다. 물론 던질지... 말지는 자유입니다.
+#
+tc.research_name.FOCALMANIPULATION=포커스 조작
+tc.research_text.FOCALMANIPULATION=진화!
+tc.research_page.FOCALMANIPULATION.1=완드 포커스들은 매우 놀라운 힘을 발휘하지만, 유연성이 부족합니다. 한 종류의 초점은 하나의 힘 밖에 발휘하지 못하는 것이 지금까지의 단점이었습니다. <BR> 우리는 포커스들을 미세하고도 정밀하게 조정하여 또 다른 힘을 발휘하도록 조작할 수 있습니다. 이를 위해선 당신이 포커스 조작기에 포커스를 놓아두고 필요한 경험치와 비스를 활성화된 노드를 통해 공급해주기만 하면 됩니다.
+tc.research_page.FOCALMANIPULATION.2=각각의 포커스들은 최대 5회까지 조정이 가능하지만, 횟수가 올라갈수록 당연히 대가도 커집니다. <BR>조정된 포커스의 효과는 영구적이므로 -  포커스를 조작할 때에는 신중함을 요구합니다.
+#
+tc.research_name.VAMPBAT=5티어 업그레이드 : 흡혈 박쥐
+tc.research_text.VAMPBAT=고약한 작은 흡혈귀
+#
+tc.research_name.PRIMPEARL=태초의 진주
+tc.research_text.PRIMPEARL=모든 것의 시작-
+tc.research_page.PRIMPEARL.1=For the first time you find yourself with a puzzle that you do not think can be solved.<BR>This object contains pure primal aspects, but they possess properties unlike what you consider normal, everyday primal aspects. You have a few theories why this could be:<BR>Firstly this "pearl" could be the remnants of primal matter that was created at the dawn of reality - elementary magic that existed before it mingled and merged into compound aspects.
+tc.research_page.PRIMPEARL.2=Alternatively it could be primal matter from a place that does not conform to the known rules of magic as you have come to understand it. You are not sure which explanation is more worrying.<BR>Either way, the pearl is a potent artifact containing vast magical power and nearly unlimited potential.<BR>It is time you start putting it to use. 
+#
+tc.research_name.PRIMNODE=태초의 노드 조작
+tc.research_text.PRIMNODE=그냥 둘을 비비고 기다려보는거지.
+tc.research_page.PRIMNODE.1=You have developed a bit of a wild theory that might be worth exploring. Why not bring a primordial pearl into contact with an aura node?<BR>Sure, bringing two such sources of raw magical energy into contact with each other might be catastrophic, but their interaction could also be highly... interesting.<BR>While anyone can do this, you are sure that completing this research has slightly improved your chances of getting a good result. Very slightly.
+#
+tc.research_name.ADVALCHEMYFURNACE=강화 연성 화로
+tc.research_text.ADVALCHEMYFURNACE=마법계의 산업 혁명
+tc.research_page.ADVALCHEMYFURNACE.1=The standard alchemical furnace is fairly slow and requires fuel to operate. While neither of those are particularly difficult obstacles to you, the fact that it is unable to process large sources of essentia is something that can not be ignored. Unfortunately the instability of the essentia slurry it creates makes it dangerous to gather too much of it in one location.<BR>With the discovery of Primordial Pearls you have found a solution to that problem - The Advanced Alchemical Furnace.<BR>Using alchemical constructs that have been strengthened with void    
+tc.research_page.ADVALCHEMYFURNACE.2=metal and exposed to a primordial pearl's strange energies much more slurry can be processed at once and at much greater speeds. The pearl is not consumed during the crafting process.<BR>Instead of fuel, heat is generated by ignis vis and instead of relying on heat alone perditio vis breaks down objects almost instantly. Lastly aqua vis keeps everything running smoothly and prevents the slurry from settling and causing problems.<BR>The machine requires a considerable amount of heat to function and requires a constant supply of ignis vis even when not operating. Perditio and aqua vis is only used when the machine is smelting. 
+#
+tc.research_name.FLUXSCRUB=플럭스 수집장치
+tc.research_text.FLUXSCRUB=마공학의 이기
+tc.research_page.FLUXSCRUB.1=매우 숙련되고 뛰어난 마공학자조차도 가끔씩 플럭스 액체나 기체 때문에 난장판을 만들기도 합니다. 그것을 치우는 것은 매우 귀찮지만, 새로운 발명품인 플럭스 수집장치가 그것들을 대신해줄 것입니다!<BR>플럭스 수집장치는 비스 중계기 등을 통해 Aer 비스를 공급받음으로서 작동을 시작하고, 밑면에 연결된 관을 통해 부산물인 Preacantatio 에센시아를 추출할 수 있습니다. 만약 저장공간이 가득 찬다면 장치는 정지합니다. 장치의 내부 저장공간이 작기 때문에 주기적으로 부산물을 제거해주어야 합니다.
+#
+tc.research_name.ENTEROUTER=아우터 랜드
+tc.research_text.ENTEROUTER=이 지옥같은 행성에서 벗어나야 합니다!
+tc.research_page.ENTEROUTER.1=확실하진 않지만, 계시에서 느낀 이계는 이상했지만, 돌과 일부가 무너져내린 뒤틀린 미로는 아니었습니다. <BR>뭔가 이상합니다. - 이 구조는 무언가를 위해 설계된 것이 아닌, 치명적인 미로인 듯 합니다. <BR> 이상한 에너지가 넘쳐나고, 마법은 이상 행동을 보입니다. 심지어 이상한 이계의 생물체들도 가득합니다.
+#
+tc.research_name.OUTERREV=아우터 랜드에 대한 계시
+tc.research_text.OUTERREV=수박 겉핥기...?
+tc.research_page.OUTERREV.1=드디어 의혹이 풀렸습니다. 이 공간은 단순히 무시무시한 것들이 나오는 곳이 아닌 완전히 다른 무언가이고, 심지어 현실로 인식되지만 현실이 아닌 것 같습니다. - 그것은 물리적인 것과 정신적인 것에 간섭할 수 있었습니다. <BR> 벽에 새겨진 문자들을 해독하자 확신이 들었습니다. 이 공간은 함정이었습니다. - 방문자와 약한 자를 걸러내는것이지요. 무엇때문에 이런 것이 존재하는지는 확실치 않습니다.
+#
+tc.research_name.SINSTONE=사악한 자철석
+tc.research_text.SINSTONE=잠시후 우회전입니다.
+tc.research_page.SINSTONE.1=You have made an interesting discovery during your study of nodes. Different kinds of nodes emit varying types of radiant energy, but none are quite as distinct as that of Sinister nodes.<BR>The energy emitted by Sinister nodes is quite unique and simple to track. By infusing a piece of flint you think you can create a simple scrying device that will light up whenever it is pointed towards such a node.<BR>The range is limited, but it is a worthwhile invention since you have often found Sinister nodes in the most interesting of places. 
+#
+tc.research_name.PRIMALCRUSHER=태초의 파쇄기
+tc.research_text.PRIMALCRUSHER=파.괘.한.다!
+tc.research_page.PRIMALCRUSHER.1=The theory behind infusion crafting is simple - infuse a single object with essentia and the properties of other objects. There are limits however, but it seems with the discovery of the primordial pearl these limits are becoming less and less.<BR>As an experiment you tried infusing the properties of completely different objects into the pearl with suprising success. The Primal Crusher is the first practical application of this discovery.<BR>By combining a Shovel of the Earthmover and a Pickaxe of the Core with their void metal counterparts you created a 
+tc.research_page.PRIMALCRUSHER.2=tool of unrivaled destructive capabilities that has most of the features of its component pieces.<BR>The Primal Crusher can mine through earth and stone with equal ease and does so in a 3x3 area. Like the Pickaxe of the Core it occasionally mines native clusters instead of raw ore.<BR>It repairs itself over time, has high enchantability and serves as a relatively good weapon in a pinch.<BR>Unfortunately it seems purely destructive in nature and has lost the construction and detection abilities of its parent tools. 
 #
